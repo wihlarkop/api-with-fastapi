@@ -3,8 +3,6 @@ from app.schema.user_schema import UserSchema
 from app.services.user_service import UserService
 from fastapi import Request, Depends, APIRouter
 
-router = APIRouter()
-
 
 async def get_all_users(
         request: Request,
